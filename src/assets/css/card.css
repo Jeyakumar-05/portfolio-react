@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #f2e9eb;
+  }
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.btnbg {
+  background-color: #e2d199;
+}
+
+.textcolor {
+  color: #31383f; /* text in nav */
+}
+
+
+.slick-dots {
+    margin: 20px;
+    margin-top: 20px;
+  }
+

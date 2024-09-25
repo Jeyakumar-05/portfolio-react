@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* add space between list items */
+  }
+  
+  .pfbg{ 
+    background-color: #F2E9EB; /* PROFILE BG */
+  }
+  .navtext{
+    color: #31383F;   /* text in nav */
+  } 
+  .pinktext{
+    color:#DD8EA4;   /* pink color */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  li {
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-link {
+      font-size: 16px;
+      padding: 8px 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-link{
+      font-size: 14px;
+      padding: 6px 10px;
+    }
+  }
+
+.active{
+  background-color: #e2d199;
+  border-radius: 5px;
+}
+
+/* profile media query */
+
