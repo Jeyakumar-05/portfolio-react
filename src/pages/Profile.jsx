@@ -7,7 +7,7 @@ import Contact from "./Contact";
 const Profile = () => {
   return (
     <>
-      <div className="h-screen pfbg flex flex-col lg:flex-row items-center fixed">
+      <div className="h-screen pfbg flex flex-col lg:flex-row items-center ">
         <div className="lg:h-[80%] h-[60%] lg:w-[60%] w-full flex flex-col items-center justify-center px-4 lg:px-0">
           <div className="h-1/5 w-full lg:w-4/6 flex justify-center items-center">
             <h1 className="font-medium text-3xl lg:text-5xl navtext text-center">

@@ -5,7 +5,7 @@ import '../assets/css/style.css'
 const Contact = () => {
   return (
     <>
-      <div className="w-full h-screen flex flex-col justify-center items-center pfbg fixed">
+      <div className="w-full h-screen flex flex-col justify-center items-center pfbg ">
         <h2 className="text-3xl font-bold mb-6 text-center navtext">Get in Touch</h2>
         <div className="w-[90%] max-w-4xl h-1/2 flex flex-col md:flex-row gap-10 justify-around items-center">
           <div className="flex flex-col items-center">
