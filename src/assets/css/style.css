@@ -48,6 +48,7 @@ ul {
 .active{
   background-color: #e2d199;
   border-radius: 5px;
+  padding: 4px;
 }
 
 /* profile media query */

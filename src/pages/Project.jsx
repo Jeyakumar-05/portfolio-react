@@ -1,9 +1,9 @@
-import React from 'react'
-import '../assets/css/card.css'
-import Photo3 from '../assets/img/docters.jpg'
-import Photo2 from '../assets/img/bank.webp'
-import Photo1 from '../assets/img/pixelimg.jpg'
-import Slider from "react-slick"
+import React from 'react';
+import '../assets/css/card.css';
+import Photo3 from '../assets/img/docters.jpg';
+import Photo2 from '../assets/img/bank.webp';
+import Photo1 from '../assets/img/pixelimg.jpg';
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -25,9 +25,8 @@ const data = [
     img: Photo2,
     about : "DoctorsPortal is a web platform that enables communication and management between healthcare providers and patients,  allowing for appointment scheduling and access to medical records.",
     source : "https://github.com/Jeyakumar-05/DoctorsPortal_Website"
-    }
-]
-
+  }
+];
 
 const Project = () => {
   const settings = {
@@ -36,59 +35,50 @@ const Project = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    responsive:[
+    responsive: [
       {
         breakpoint: 1024,
-        settings:{
-          slidesToShow:3,
-          slidesToScroll:3,
-          infinite:true,
-          dots:true
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
         }
       },
       {
         breakpoint: 600,
-        settings:{
-          slidesToShow:2,
-          slidesToScroll:2,
-          initialSlide:2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings:{
-          slidesToShow:1,
-          slidesToScroll:1,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       }
     ]
-    
   };
-  return (
-    <>
-      <div className='w-3/4 h-[80vh] m-auto'> 
-        <div className='mt-20 mb-20'>
-          <Slider {...settings}>
-            {data.map((d,id) => (
-              <div key={id} className='bg-white h-[450px] textcolor rounded-xl flex justify-center hover:scale-105 duration-300 ease-in-out'>
-                <div className='rounded-t-xl flex justify-center items-center h-[45%] '>
-                  <img src={d.img} alt="gitsource" className='rounded-t-xl h-full w-full'/>
-                </div>
 
-                <div className='flex flex-col justify-center items-center gap-4 p-4'>
-                  <p className='text-xl font-semibold'>{d.name}</p>
-                  <p>{d.about}</p>
-                </div>
-                <div className='flex items-end justify-center'>
-                  <div className='btnbg text-white text-lg px-6 py-1 rounded-xl '><a href={d.source} target="_blank">Source</a></div>
+  return (
+    <div className='w-full lg:w-3/4 h-auto m-auto px-2'>
+      <div className='mt-10 mb-20'>
+        <Slider {...settings}>
+          {data.map((d, id) => (
+            <div key={id} className='bg-white textcolor rounded-xl flex flex-col justify-between hover:scale-105 duration-300 ease-in-out p-4 h-[500px]'>
+              <div className='flex justify-center items-center h-[45%] mb-4'>
+                <img src={d.img} alt="gitsource" className='rounded-t-xl h-full w-full object-cover'/>
+              </div>
+              <div className='flex flex-col justify-start items-center gap-4'>
+                <p className='text-xl font-semibold'>{d.name}</p>
+                <p className='text-sm lg:text-base'>{d.about}</p>
+              </div>
+              <div className='flex items-end justify-center mt-4'>
+                <div className='btnbg text-white text-lg px-6 py-2 rounded-xl '>
+                  <a href={d.source} target="_blank" rel="noopener noreferrer">Source</a>
                 </div>
               </div>
-            ))}
-          </Slider>
-          
-        </div>
+            </div>
+          ))}
+        </Slider>
       </div>
-    </>
+    </div>
   );
 };
-export default Project
+
+export default Project;
