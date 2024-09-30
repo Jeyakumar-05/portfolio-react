@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <>
       <div className="h-[4rem] w-full flex justify-between items-center rounded-md bg-white border border-gray-400 px-4 lg:px-10">
-        <div className="h-full flex items-center font-semibold pinktext text-2xl">
+        <div className="h-full flex items-center font-medium pinktext text-2xl lg:text-4xl">
           <h2>{name ? name : "JEYAKUMAR S"}</h2>
         </div>
         <div className="hidden lg:flex w-[45%] h-full items-center justify-end">
